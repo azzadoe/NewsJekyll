@@ -10,17 +10,10 @@
 
 {% seo %}
 
-<link rel="preload" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-<noscript>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-</noscript>
 
-<!--
-<link rel="preload" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-<noscript>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-</noscript>
--->
+<link rel="stylesheet" type="text/css" href="/assets/css/style.css">
+
+
 <link rel="preload" href="{{ site.baseurl }}/assets/css/screen.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
 <noscript><link href="{{ site.baseurl }}/assets/css/screen.css" rel="stylesheet"></noscript>
 
@@ -53,86 +46,276 @@ ga('send', 'pageview');
 	</noscript>
 
 
-<!-- Begin Menu Navigation
-================================================== -->
-<nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top mediumnavigation nav-down">
 
-    <div class="container pr-0">
 
-    <!-- Begin Logo -->
-    <a class="navbar-brand" href="{{ site.baseurl }}/">
-    <img src="{{ site.baseurl }}/{{ site.logo }}" alt="{{ site.name }}">
-    </a>
-    <!-- End Logo -->
+    <!-- Offcanvas START -->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasMenu">
+	<!-- Offcanvas header -->
+	<div class="offcanvas-header justify-content-between border-bottom px-3">
+		<h5 class="mb-0">Your Cart</h5>
+		<button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+	</div>
 
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMediumish" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-    </button>
+	<!-- Offcanvas body -->
+	<div class="offcanvas-body d-flex flex-column px-3">
+		<div class="row g-3">
+			<!-- Image -->
+			<div class="col-4">
+				<img class="rounded-2 bg-light p-2" src="assets/images/shop/02.png" alt="avatar">
+			</div>
+			<div class="col-8">
+				<p class="heading-color fw-semibold mb-1">Round neck cotton t-shirt</p>
+				<div class="d-flex justify-content-between align-items-center">
+					<!-- Select item -->
+					<select class="form-select form-select-sm w-auto" aria-label="Default select example">
+						<option value="1">01</option>
+						<option value="2">02</option>
+						<option value="3">03</option>
+					</select>
+	
+					<a href="#" class="btn btn-sm btn-link p-0">Remove</a>
+				</div>
+			</div>
+		</div>
 
-    <div class="collapse navbar-collapse" id="navbarMediumish">
+		<!-- Button and price -->
+		<div class="mt-auto">
+			<div class="d-flex justify-content-between mb-2">
+				<span class="heading-color fw-semibold">Subtotal</span>
+				<h6 class="text-success mb-0">$103</h6>
+			</div>
+			<!-- Button -->
+			<div class="d-grid">
+				<a href="checkout.html" class="btn btn-lg btn-dark mb-0">Continue to Checkout</a>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- Offcanvas END -->
 
-        <!-- Begin Menu -->
+<!-- Header START -->
+<header class="header-sticky header-absolute">
+	<!-- Logo Nav START -->
+	<nav class="navbar navbar-expand-xl">
+		<div class="container">
+			<!-- Logo START -->
+			<a class="navbar-brand me-5" href="{{ site.baseurl }}/">
+				<img class="light-mode-item navbar-brand-item" src="{{ site.baseurl }}/{{ site.logo }}" alt="logo">
+				<img class="dark-mode-item navbar-brand-item" src="{{ site.baseurl }}/{{ site.logo }}" alt="logo">
+			</a>
+			<!-- Logo END -->
 
-            <ul class="navbar-nav ml-auto">
+			<!-- Main navbar START -->
+			<div class="navbar-collapse collapse" id="navbarCollapse">
+				<ul class="navbar-nav navbar-nav-scroll dropdown-hover">
 
-                {% if page.url == "/" %}
-                <li class="nav-item active">
-                {% else %}
-                <li class="nav-item">
-                {% endif %}
-                <a class="nav-link" href="{{ site.baseurl }}/index.html">Home</a>
-                </li>
+					<!-- Nav item -->
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle active" href="#" data-bs-auto-close="outside" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Demos</a>
+						<div class="dropdown-menu dropdown-menu-size-lg p-3">
+							<div class="row">
+								<!-- Image and button -->
+								<div class="col-xl-6">
+									<div class="card bg-light overflow-hidden h-100 p-3" style="background:url(assets/images/bg/08.jpg) no-repeat; background-size:cover; background-position:center;">
+										<!-- Bg overlay -->
+										<div class="bg-overlay bg-dark opacity-5"></div>
+										<div class="card-body d-flex justify-content-center text-center flex-column align-items-center position-relative z-index-2 p-0">
+											<h5 class="text-white">Supercharge your site</h5>
+											<a href="#" class="btn btn-sm btn-white mb-0">See how <i class="bi bi-arrow-right"></i></a>
+										</div>
+									</div>
+								</div>
 
-                <li class="nav-item">
-                <a class="nav-link" href="{{ site.baseurl }}/categories#tutorial">Blogger</a>
-                </li>
+								<!-- Index nav links -->
+								<div class="col-xl-6">
+									<ul class="list-unstyled pt-3">
+										<li> <a class="dropdown-item active" href="#">Menu item</a> </li>
+										<li> <a class="dropdown-item" href="#">Menu item</a> </li>
+										<li> <a class="dropdown-item" href="#">Menu item</a> </li>
+									</ul>
+								</div>
 
-                <li class="nav-item">
-                <a target="_blank" class="nav-link" href="/categories#tutorial">Tutorial</a>
-                </li>
+								<!-- CTA -->
+								<div class="col-12">
+									<hr class="mt-sm-4"> <!-- Divider -->
+									<div class="d-sm-flex justify-content-between align-items-center px-2">
+										<div class="me-3 mb-2 mb-sm-0">
+											<h6 class="mb-2 mb-sm-0">Ready to get started?</h6>
+											<small class="mb-0">Take your documents to the next level with Mizzle</small>
+										</div>
+										<a href="#" class="btn btn-sm btn-primary">Get in touch</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
 
-                <li class="nav-item">
-                <a target="_blank" class="nav-link" href="/ppt">PPT</a>
-                </li>
+					<!-- Nav item -->
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-haspopup="true" aria-expanded="false">Pages</a>
+						<ul class="dropdown-menu">
+							<!-- Dropdown submenu -->
+							<li class="dropdown dropend">
+								<a class="nav-link dropdown-link dropdown-toggle" data-bs-toggle="dropdown" href="#">Sub Menu</a>
+								<ul class="dropdown-menu" data-bs-popper="none">
+									<li> <a class="dropdown-item" href="#">Item 1</a></li>
+									<li> <a class="dropdown-item" href="#">Item 2</a></li>
+									<li> <a class="dropdown-item" href="#">Item 3</a></li>
+								</ul>
+							</li>
+							
+							<li> <a class="dropdown-item" href="#">Menu item</a></li>
+							<li> <a class="dropdown-item" href="#">Menu item 2</a></li>
 
-                <li class="nav-item">
-                <a target="_blank" class="nav-link" href="/categories#teknologi">Teknologi</a>
-                </li>
-                <li class="nav-item">
-                    <a target="_blank" class="nav-link" href="/categories#pendidikan"> Pendidikan</a>
-                    </li>
+							<!-- Dropdown divider -->
+							<li> <hr class="dropdown-divider"></li>
+							
+							<!-- Dropdown Multilevel -->
+							<li> 
+								<a class="dropdown-item" href="#" target="_blank">
+									<i class="fa-fw bi bi-life-preserver me-2"></i>Support
+								</a> 
+							</li>
+							<li> 
+								<a class="dropdown-item" href="#" target="_blank">
+									<i class="fa-fw bi bi-card-text me-2"></i>Documentation
+								</a> 
+							</li>
+						</ul>
+					</li>
 
-                <li class="nav-item">
-                <a target="_blank" class="nav-link" href=""> Kelas Blogger</a>
-                </li>
+					<!-- Nav item -->
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Portfolio</a>
+						<div class="dropdown-menu dropdown-menu-center dropdown-menu-size-xl p-3">
+							<div class="row g-xl-3">
+								<!-- Work -->
+								<div class="col-xl-8 d-none d-xl-block">
+									<div class="d-flex gap-4">
+										<!-- Card -->
+										<div class="card bg-transparent">
+											<!-- Image -->
+											<img src="assets/images/portfolio/list/01.jpg" class="card-img" alt="">
+											<!-- Card body -->
+											<div class="card-body px-0 text-start pb-0">
+												<h6><a href="#">Ceremony Worthy of Time</a></h6>
+												<p class="mb-2 small">We help our customers better manage their web presence.</p>
+												<a class="icon-link icon-link-hover stretched-link mb-0" href="portfolio-case-studies-v1.html">Learn more<i class="bi bi-arrow-right"></i> </a>
+											</div>
+										</div>
 
-                <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
-                    <ul class="navbar-nav">
-                      <li class="nav-item dropdown">
-                        <button class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                          Dropdown
-                        </button>
-                        <ul class="dropdown-menu dropdown-menu-dark">
-                          <li><a class="dropdown-item" href="#">Action</a></li>
-                          <li><a class="dropdown-item" href="#">Another action</a></li>
-                          <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                      </li>
-                    </ul>
-                  </div>
+										<!-- Card -->
+										<div class="card bg-transparent">
+											<!-- Image -->
+											<img src="assets/images/portfolio/list/02.jpg" class="card-img" alt="">
+											<!-- Card body -->
+											<div class="card-body px-0 text-start pb-0">
+												<h6><a href="#">Brushstrokes and Beyond</a></h6>
+												<p class="mb-2 small">We help our customers better manage their web presence.</p>
+												<a class="icon-link icon-link-hover stretched-link mb-0" href="portfolio-case-studies-v2.html">Learn more<i class="bi bi-arrow-right"></i> </a>
+											</div>
+										</div>
 
+										<!-- Divider line -->
+										<div class="vr ms-2"></div>
+									</div>
+								</div>
+
+								<!-- Index nav links -->
+								<div class="col-xl-4">
+									<ul class="list-unstyled">
+										<li class="dropdown-header h6">Portfolio Pages</li>
+										<li> <a class="dropdown-item" href="#">Portfolio item</a> </li>
+										<li> <a class="dropdown-item" href="#">Portfolio item</a> </li>
+										<li> <a class="dropdown-item" href="#">Portfolio item</a> </li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</li>
+
+					<!-- Nav item -->
+					<li class="nav-item"> <a class="nav-link" href="#">Contact us</a> </li>
+				</ul>
+			</div>
+			<!-- Main navbar END -->
+
+			<!-- Buttons -->
+			<ul class="nav align-items-center dropdown-hover ms-sm-2">
+				<!-- Dark mode option START -->
+				<li class="nav-item dropdown dropdown-animation">
+					<button class="btn btn-link mb-0 px-2 lh-1" id="bd-theme"
+					type="button"
+					aria-expanded="false"
+					data-bs-toggle="dropdown"
+					data-bs-display="static">
+					<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"  class="bi bi-circle-half theme-icon-active fill-mode fa-fw" viewBox="0 0 16 16">
+						<path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z"/>
+						<use href="#"></use>
+					</svg>
+					</button>
+
+					<ul class="dropdown-menu min-w-auto dropdown-menu-end" aria-labelledby="bd-theme">
+						<li class="mb-1">
+							<button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light">
+								<svg width="16" height="16" fill="currentColor" class="bi bi-brightness-high-fill fa-fw mode-switch me-1" viewBox="0 0 16 16">
+									<path d="M12 8a4 4 0 1 1-8 0 4 4 0 0 1 8 0zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/>
+									<use href="#"></use>
+								</svg>Light
+							</button>
+						</li>
+						<li class="mb-1">
+							<button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark">
+								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-moon-stars-fill fa-fw mode-switch me-1" viewBox="0 0 16 16">
+									<path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"/>
+									<path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"/>
+									<use href="#"></use>
+								</svg>Dark
+							</button>
+						</li>
+						<li>
+							<button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="auto">
+								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle-half fa-fw mode-switch me-1" viewBox="0 0 16 16">
+									<path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z"/>
+									<use href="#"></use>
+								</svg>Auto
+							</button>
+						</li>
+					</ul>
+				</li>
+				<!-- Dark mode option END -->
+
+				<!-- Search -->
                 {% include search-lunr.html %}
 
-            </ul>
+				<!-- Offcanvas cart menu -->
+				<li class="nav-item position-relative ms-2 ms-sm-3">
+					<a class="btn btn-light border btn-round mb-0" data-bs-toggle="offcanvas" href="#offcanvasMenu" role="button" aria-controls="offcanvasMenu">
+							<i class="bi bi-cart3 fa-fw" data-bs-target="#offcanvasMenu"></i>
+					</a>
+					<span class="position-absolute top-0 start-100 translate-middle badge smaller rounded-circle bg-primary mt-xl-2 ms-n1">2 
+						<span class="visually-hidden">unread messages</span>
+					</span>
+				</li>
 
-        <!-- End Menu -->
+				<!-- Responsive navbar toggler -->
+				<li class="nav-item">
+					<button class="navbar-toggler ms-3 p-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-animation">
+							<span></span>
+							<span></span>
+							<span></span>
+						</span>
+					</button>
+				</li>	
+			</ul>
 
-    </div>
+		</div>
+	</nav>
+	<!-- Logo Nav END -->
+</header>
+<!-- Header END -->
 
-    </div>
-</nav>
-<!-- End Navigation
-================================================== -->
 
 <div class="site-content">
 
