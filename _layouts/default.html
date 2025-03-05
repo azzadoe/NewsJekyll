@@ -10,15 +10,14 @@
 
 {% seo %}
 
-<link rel="stylesheet" href="https://geeksui.codescandy.com/geeks/assets/css/theme.min.css">
+<link rel="stylesheet" href="https://mizzle.webestica.com/assets/css/style.css">
 <link href="https://geeksui.codescandy.com/geeks/assets/css/bootstrap-icons.min.css" rel="stylesheet" />
 
 
 <!-- Libs CSS -->
-<link href="https://geeksui.codescandy.com/geeks/assets/fonts/feather/feather.css" rel="stylesheet" />
-<link href="https://geeksui.codescandy.com/geeks/assets/libs/bootstrap-icons/font/bootstrap-icons.min.css" rel="stylesheet" />
-<link href="https://geeksui.codescandy.com/geeks/assets/libs/simplebar/dist/simplebar.min.css" rel="stylesheet" />
-
+<link rel="stylesheet" type="text/css" href="https://mizzle.webestica.com/assets/vendor/font-awesome/css/all.min.css">
+<link rel="stylesheet" type="text/css" href="https://mizzle.webestica.com/assets/vendor/bootstrap-icons/bootstrap-icons.css">
+<link rel="stylesheet" type="text/css" href="https://mizzle.webestica.com/assets/vendor/swiper/swiper-bundle.min.css">
 
 
 <link rel="preload" href="{{ site.baseurl }}/assets/css/screen.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
@@ -53,367 +52,281 @@ ga('send', 'pageview');
 	</noscript>
 
 <!--  HERO -->
-<nav class="navbar navbar-expand-lg">
-  <div class="container-fluid px-0">
-     <div class="d-flex">
-        <a class="navbar-brand" href="../index.html">
-        <img src="https://geeksui.codescandy.com/geeks/assets/images/brand/logo/logo.svg" alt="Geeks high quality website templates created with Bootstrap 5." />
-        </a>
-        <div class="dropdown d-none d-md-block">
-           <button
-              class="btn btn-light-primary text-primary"
-              type="button"
-              id="dropdownMenuButton1"
-              data-bs-toggle="dropdown"
-              aria-expanded="false">
-           <i class="fe fe-list me-2 align-middle"></i>
-           Category
-           </button>
-           <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-              <li class="dropdown-submenu dropend">
-                 <a class="dropdown-item dropdown-list-group-item dropdown-toggle" href="#">Web Development</a>
-                 <ul class="dropdown-menu">
-                    <li>
-                       <a class="dropdown-item" href="../pages/course-category.html">Bootstrap</a>
-                    </li>
-                    <li>
-                       <a class="dropdown-item" href="../pages/course-category.html">React</a>
-                    </li>
-                    <li>
-                       <a class="dropdown-item" href="../pages/course-category.html">GraphQl</a>
-                    </li>
-                    <li>
-                       <a class="dropdown-item" href="../pages/course-category.html">Gatsby</a>
-                    </li>
-                    <li>
-                       <a class="dropdown-item" href="../pages/course-category.html">Grunt</a>
-                    </li>
-                    <li>
-                       <a class="dropdown-item" href="../pages/course-category.html">Svelte</a>
-                    </li>
-                    <li>
-                       <a class="dropdown-item" href="../pages/course-category.html">Meteor</a>
-                    </li>
-                    <li>
-                       <a class="dropdown-item" href="../pages/course-category.html">HTML5</a>
-                    </li>
-                    <li>
-                       <a class="dropdown-item" href="../pages/course-category.html">Angular</a>
-                    </li>
-                 </ul>
-              </li>
-              <li class="dropdown-submenu dropend">
-                 <a class="dropdown-item dropdown-list-group-item dropdown-toggle" href="#">Design</a>
-                 <ul class="dropdown-menu">
-                    <li>
-                       <a class="dropdown-item" href="../pages/course-category.html">Graphic Design</a>
-                    </li>
-                    <li>
-                       <a class="dropdown-item" href="../pages/course-category.html">Illustrator</a>
-                    </li>
-                    <li>
-                       <a class="dropdown-item" href="../pages/course-category.html">UX / UI Design</a>
-                    </li>
-                    <li>
-                       <a class="dropdown-item" href="../pages/course-category.html">Figma Design</a>
-                    </li>
-                    <li>
-                       <a class="dropdown-item" href="../pages/course-category.html">Adobe XD</a>
-                    </li>
-                    <li>
-                       <a class="dropdown-item" href="../pages/course-category.html">Sketch</a>
-                    </li>
-                    <li>
-                       <a class="dropdown-item" href="../pages/course-category.html">Icon Design</a>
-                    </li>
-                    <li>
-                       <a class="dropdown-item" href="../pages/course-category.html">Photoshop</a>
-                    </li>
-                 </ul>
-              </li>
-              <li>
-                 <a href="../pages/course-category.html" class="dropdown-item">Mobile App</a>
-              </li>
-              <li>
-                 <a href="../pages/course-category.html" class="dropdown-item">IT Software</a>
-              </li>
-              <li>
-                 <a href="../pages/course-category.html" class="dropdown-item">Marketing</a>
-              </li>
-              <li>
-                 <a href="../pages/course-category.html" class="dropdown-item">Music</a>
-              </li>
-              <li>
-                 <a href="../pages/course-category.html" class="dropdown-item">Life Style</a>
-              </li>
-              <li>
-                 <a href="../pages/course-category.html" class="dropdown-item">Business</a>
-              </li>
-              <li>
-                 <a href="../pages/course-category.html" class="dropdown-item">Photography</a>
-              </li>
-           </ul>
-        </div>
-     </div>
-     <div class="order-lg-3">
-        <div class="d-flex align-items-center">
-           <div class="dropdown me-2">
-              <button
-                 class="btn btn-light btn-icon rounded-circle d-flex align-items-center bd-theme"
-                 type="button"
-                 aria-expanded="false"
-                 data-bs-toggle="dropdown"
-                 aria-label="Toggle theme (auto)">
-              <i class="bi theme-icon-active"></i>
-              <span class="visually-hidden bs-theme-text">Toggle theme</span>
-              </button>
-              <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="bs-theme-text">
-                 <li>
-                    <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="false">
-                    <i class="bi theme-icon bi-sun-fill"></i>
-                    <span class="ms-2">Light</span>
-                    </button>
-                 </li>
-                 <li>
-                    <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="false">
-                    <i class="bi theme-icon bi-moon-stars-fill"></i>
-                    <span class="ms-2">Dark</span>
-                    </button>
-                 </li>
-                 <li>
-                    <button
-                       type="button"
-                       class="dropdown-item d-flex align-items-center active"
-                       data-bs-theme-value="auto"
-                       aria-pressed="true">
-                    <i class="bi theme-icon bi-circle-half"></i>
-                    <span class="ms-2">Auto</span>
-                    </button>
-                 </li>
-              </ul>
-           </div>
-           <span class="d-none d-md-block">
-           <a href="#" class="btn btn-icon btn-light rounded-circle"><i class="fe fe-shopping-cart align-middle"></i></a>
-           </span>
-           <a href="../pages/sign-in.html" class="btn btn-outline-primary ms-2">Sign in</a>
-           <a href="../pages/sign-up.html" class="btn btn-primary ms-1 d-none d-lg-block">Sign up</a>
-           <!-- Button -->
-           <button
-              class="navbar-toggler collapsed"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbar-default2"
-              aria-controls="navbar-default2"
-              aria-expanded="false"
-              aria-label="Toggle navigation">
-           <span class="icon-bar top-bar mt-0"></span>
-           <span class="icon-bar middle-bar"></span>
-           <span class="icon-bar bottom-bar"></span>
-           </button>
-        </div>
-     </div>
-     <!-- Collapse -->
-     <div class="collapse navbar-collapse" id="navbar-default2">
-        <ul class="navbar-nav mx-auto">
-           <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-           </li>
-           <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-           </li>
-           <li class="nav-item dropdown">
-              <a
-                 class="nav-link dropdown-toggle"
-                 href="#"
-                 id="navbarDropdown"
-                 data-bs-toggle="dropdown"
-                 aria-haspopup="true"
-                 aria-expanded="false"
-                 data-bs-display="static">
-              Dropdown
-              </a>
-              <ul class="dropdown-menu dropdown-menu-arrow" aria-labelledby="navbarDropdown">
-                 <li class="dropdown-submenu dropend">
-                    <a class="dropdown-item dropdown-list-group-item dropdown-toggle" href="#">Dropdown</a>
-                    <ul class="dropdown-menu">
-                       <li>
-                          <a class="dropdown-item" href="../pages/course-category.html">Action Link</a>
-                       </li>
-                       <li>
-                          <a href="#!" class="dropdown-item">Anthor Action</a>
-                       </li>
-                       <li>
-                          <a href="#!" class="dropdown-item">Something else here</a>
-                       </li>
-                    </ul>
-                 </li>
-                 <li>
-                    <a href="#!" class="dropdown-item">Action Link</a>
-                 </li>
-                 <li>
-                    <a href="#!" class="dropdown-item">Anthor Action</a>
-                 </li>
-                 <li>
-                    <a href="#!" class="dropdown-item">Something else here</a>
-                 </li>
-              </ul>
-           </li>
-           <li class="nav-item dropdown dropdown-fullwidth">
-              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Mega Menu</a>
-              <div class="dropdown-menu dropdown-menu-md">
-                 <div class="px-4 pt-2 pb-2">
-                    <div class="row">
-                       <div class="col-12">
-                          <div class="lh-1 mb-5">
-                             <h3 class="mb-1">Earn a Degree</h3>
-                             <p>Breakthrough pricing on 100% online degrees designed to fit into your life.</p>
-                          </div>
-                       </div>
-                       <div class="col-lg-4 col-12">
-                          <div class="border-bottom pb-2 mb-3">
-                             <h5 class="mb-0">Degrees</h5>
-                          </div>
-                          <div>
-                             <a href="#">
-                                <div class="d-flex mb-3">
-                                   <img src="https://geeksui.codescandy.com/geeks/assets/images/png/degree-1.png" alt="" />
-                                   <div class="ms-2">
-                                      <small class="text-body">University of Michigan</small>
-                                      <h6 class="mb-0">Master of Applied Data Science</h6>
-                                   </div>
-                                </div>
-                             </a>
-                             <a href="#">
-                                <div class="d-flex mb-3">
-                                   <img src="https://geeksui.codescandy.com/geeks/assets/images/png/degree-2.png" alt="" />
-                                   <div class="ms-2">
-                                      <small class="text-body">A&B College 1980</small>
-                                      <h6 class="mb-0">MBA in Business Analytics</h6>
-                                   </div>
-                                </div>
-                             </a>
-                             <a href="#">
-                                <div class="d-flex mb-3">
-                                   <img src="https://geeksui.codescandy.com/geeks/assets/images/png/degree-3.png" alt="" />
-                                   <div class="ms-2">
-                                      <small class="text-body">Imperial College London</small>
-                                      <h6 class="mb-0">Master of Science in Machine</h6>
-                                   </div>
-                                </div>
-                             </a>
-                             <a href="#">
-                                <div class="d-flex mb-3">
-                                   <img src="https://geeksui.codescandy.com/geeks/assets/images/png/degree-4.png" alt="" />
-                                   <div class="ms-2">
-                                      <small class="text-body">University of Colorado</small>
-                                      <h6 class="mb-0">Master of Computer Science</h6>
-                                   </div>
-                                </div>
-                             </a>
-                             <div class="mt-4">
-                                <a href="#" class="btn btn-outline-primary btn-sm">View all degree</a>
-                             </div>
-                          </div>
-                       </div>
-                       <div class="col-lg-4 col-12 mt-4 mt-lg-0">
-                          <div class="border-bottom pb-2 mb-3">
-                             <h5 class="mb-0">Certificate Programs</h5>
-                          </div>
-                          <div>
-                             <a href="#">
-                                <div class="d-flex mb-3">
-                                   <img src="https://geeksui.codescandy.com/geeks/assets/images/png/google.png" alt="" />
-                                   <div class="ms-2">
-                                      <small class="text-body">No Prerequisites</small>
-                                      <h6 class="mb-0">Google Data Analytics</h6>
-                                   </div>
-                                </div>
-                             </a>
-                             <a href="#">
-                                <div class="d-flex mb-3">
-                                   <img src="https://geeksui.codescandy.com/geeks/assets/images/png/IBM.png" alt="" />
-                                   <div class="ms-2">
-                                      <small class="text-body">No Prerequisites</small>
-                                      <h6 class="mb-0">IBM Data Science</h6>
-                                   </div>
-                                </div>
-                             </a>
-                             <a href="#">
-                                <div class="d-flex mb-3">
-                                   <img src="https://geeksui.codescandy.com/geeks/assets/images/png/microsoft.png" alt="" />
-                                   <div class="ms-2">
-                                      <small class="text-body">Expert Feedback</small>
-                                      <h6 class="mb-0">Machine Leaning for Analytics</h6>
-                                   </div>
-                                </div>
-                             </a>
-                             <a href="#">
-                                <div class="d-flex mb-3">
-                                   <img src="https://geeksui.codescandy.com/geeks/assets/images/png/tensorflow.png" alt="" />
-                                   <div class="ms-2">
-                                      <small class="text-body">Certification Prerequisites</small>
-                                      <h6 class="mb-0">TensorFlow Developer Certificate</h6>
-                                   </div>
-                                </div>
-                             </a>
-                             <a href="#">
-                                <div class="d-flex mb-3">
-                                   <img src="https://geeksui.codescandy.com/geeks/assets/images/png/meta.png" alt="" />
-                                   <div class="ms-2">
-                                      <small class="text-body">University of Colorado</small>
-                                      <h6 class="mb-0">Meta Marketing Analytics</h6>
-                                   </div>
-                                </div>
-                             </a>
-                             <div class="mt-4">
-                                <a href="#" class="btn btn-outline-primary btn-sm">View all Certificates</a>
-                             </div>
-                          </div>
-                       </div>
-                       <div class="col-lg-4 col-12 mt-4 mt-lg-0">
-                          <div class="border-bottom pb-2 mb-3">
-                             <h5 class="mb-0">Popular Skills</h5>
-                          </div>
-                          <div>
-                             <ul class="nav flex-column">
-                                <li class="nav-item">
-                                   <a href="#" class="nav-link">Python</a>
-                                </li>
-                                <li class="nav-item">
-                                   <a href="#" class="nav-link">SQL</a>
-                                </li>
-                                <li class="nav-item">
-                                   <a href="#" class="nav-link">Microsoft Excel</a>
-                                </li>
-                                <li class="nav-item">
-                                   <a href="#" class="nav-link">Machine Learning</a>
-                                </li>
-                                <li class="nav-item">
-                                   <a href="#" class="nav-link">Data Science</a>
-                                </li>
-                                <li class="nav-item">
-                                   <a href="#" class="nav-link">Data Analytics</a>
-                                </li>
-                                <li class="nav-item">
-                                   <a href="#" class="nav-link">Power BI</a>
-                                </li>
-                                <li class="nav-item">
-                                   <a href="#" class="nav-link">Artificial Intelligence</a>
-                                </li>
-                             </ul>
-                             <div class="mt-4">
-                                <a href="#" class="btn btn-outline-primary btn-sm">View all Skills</a>
-                             </div>
-                          </div>
-                       </div>
-                    </div>
-                 </div>
-              </div>
-           </li>
-        </ul>
-     </div>
-  </div>
-</nav>
+<!-- Header START -->
+<header class="header-sticky header-absolute">
+	<!-- Logo Nav START -->
+	<nav class="navbar navbar-expand-xl">
+		<div class="container">
+			<!-- Logo START -->
+			<a class="navbar-brand me-0" href="index.html">
+				<img class="light-mode-item navbar-brand-item" src="assets/images/logo.svg" alt="logo">
+				<img class="dark-mode-item navbar-brand-item" src="assets/images/logo-light.svg" alt="logo">
+			</a>
+			<!-- Logo END -->
+
+			<!-- Main navbar START -->
+			<div class="navbar-collapse collapse" id="navbarCollapse">
+				<ul class="navbar-nav navbar-nav-scroll dropdown-hover mx-auto">
+
+					<!-- Nav item -->
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle active" href="#" data-bs-auto-close="outside" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Demos</a>
+						<div class="dropdown-menu dropdown-menu-size-lg p-3">
+							<div class="row">
+								<!-- Image and button -->
+								<div class="col-xl-6">
+									<div class="card bg-light overflow-hidden h-100 p-3" style="background:url(assets/images/bg/08.jpg) no-repeat; background-size:cover; background-position:center;">
+										<!-- Bg overlay -->
+										<div class="bg-overlay bg-dark opacity-5"></div>
+										<div class="card-body d-flex justify-content-center text-center flex-column align-items-center position-relative z-index-2 p-0">
+											<h5 class="text-white">Supercharge your site</h5>
+											<a href="#" class="btn btn-sm btn-white mb-0">See how <i class="bi bi-arrow-right"></i></a>
+										</div>
+									</div>
+								</div>
+
+								<!-- Index nav links -->
+								<div class="col-xl-6">
+									<ul class="list-unstyled pt-3">
+										<li> <a class="dropdown-item active" href="#">Menu item</a> </li>
+										<li> <a class="dropdown-item" href="#">Menu item</a> </li>
+										<li> <a class="dropdown-item" href="#">Menu item</a> </li>
+									</ul>
+								</div>
+
+								<!-- CTA -->
+								<div class="col-12">
+									<hr class="mt-sm-4"> <!-- Divider -->
+									<div class="d-sm-flex justify-content-between align-items-center px-2">
+										<div class="me-3 mb-2 mb-sm-0">
+											<h6 class="mb-2 mb-sm-0">Ready to get started?</h6>
+											<small class="mb-0">Take your documents to the next level with Mizzle</small>
+										</div>
+										<a href="#" class="btn btn-sm btn-primary">Get in touch</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+
+					<!-- Nav item -->
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-haspopup="true" aria-expanded="false">Pages</a>
+						<ul class="dropdown-menu">
+							<!-- Dropdown submenu -->
+							<li class="dropdown dropend">
+								<a class="nav-link dropdown-link dropdown-toggle" data-bs-toggle="dropdown" href="#">Sub Menu</a>
+								<ul class="dropdown-menu" data-bs-popper="none">
+									<li> <a class="dropdown-item" href="#">Item 1</a></li>
+									<li> <a class="dropdown-item" href="#">Item 2</a></li>
+									<li> <a class="dropdown-item" href="#">Item 3</a></li>
+								</ul>
+							</li>
+							
+							<li> <a class="dropdown-item" href="#">Menu item</a></li>
+							<li> <a class="dropdown-item" href="#">Menu item 2</a></li>
+
+							<!-- Dropdown divider -->
+							<li> <hr class="dropdown-divider"></li>
+							
+							<!-- Dropdown Multilevel -->
+							<li> 
+								<a class="dropdown-item" href="#" target="_blank">
+									<i class="fa-fw bi bi-life-preserver me-2"></i>Support
+								</a> 
+							</li>
+							<li> 
+								<a class="dropdown-item" href="#" target="_blank">
+									<i class="fa-fw bi bi-card-text me-2"></i>Documentation
+								</a> 
+							</li>
+						</ul>
+					</li>
+
+					<!-- Nav item -->
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Portfolio</a>
+						<div class="dropdown-menu dropdown-menu-center dropdown-menu-size-xl p-3">
+							<div class="row g-xl-3">
+								<!-- Work -->
+								<div class="col-xl-8 d-none d-xl-block">
+									<div class="d-flex gap-4">
+										<!-- Card -->
+										<div class="card bg-transparent">
+											<!-- Image -->
+											<img src="assets/images/portfolio/list/01.jpg" class="card-img" alt="">
+											<!-- Card body -->
+											<div class="card-body px-0 text-start pb-0">
+												<h6><a href="#">Ceremony Worthy of Time</a></h6>
+												<p class="mb-2 small">We help our customers better manage their web presence.</p>
+												<a class="icon-link icon-link-hover stretched-link mb-0" href="portfolio-case-studies-v1.html">Learn more<i class="bi bi-arrow-right"></i> </a>
+											</div>
+										</div>
+
+										<!-- Card -->
+										<div class="card bg-transparent">
+											<!-- Image -->
+											<img src="assets/images/portfolio/list/02.jpg" class="card-img" alt="">
+											<!-- Card body -->
+											<div class="card-body px-0 text-start pb-0">
+												<h6><a href="#">Brushstrokes and Beyond</a></h6>
+												<p class="mb-2 small">We help our customers better manage their web presence.</p>
+												<a class="icon-link icon-link-hover stretched-link mb-0" href="portfolio-case-studies-v2.html">Learn more<i class="bi bi-arrow-right"></i> </a>
+											</div>
+										</div>
+
+										<!-- Divider line -->
+										<div class="vr ms-2"></div>
+									</div>
+								</div>
+
+								<!-- Index nav links -->
+								<div class="col-xl-4">
+									<ul class="list-unstyled">
+										<li class="dropdown-header h6">Portfolio Pages</li>
+										<li> <a class="dropdown-item" href="#">Portfolio item</a> </li>
+										<li> <a class="dropdown-item" href="#">Portfolio item</a> </li>
+										<li> <a class="dropdown-item" href="#">Portfolio item</a> </li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</li>
+
+					<!-- Nav item -->
+					<li class="nav-item dropdown dropdown-fullwidth">
+						<a class="nav-link dropdown-toggle" href="#" id="megaMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Megamenu</a>
+						<div class="dropdown-menu py-0" aria-labelledby="megaMenu">
+							
+							<div class="row p-2 p-sm-4 g-4">
+								<!-- Dropdown column item -->
+								<div class="col-md-6 col-xl-3">
+									<ul class="list-unstyled">
+										<li class="dropdown-header h6 mb-2">Useful links</li>
+										<li> <a class="dropdown-item" href="#">Market research</a> </li>
+										<li> <a class="dropdown-item" href="#">Advertising</a> </li>
+										<li> <a class="dropdown-item" href="#">Consumer behavior</a> </li>
+									</ul>
+								</div>
+
+								<!-- Dropdown column item -->
+								<div class="col-md-6 col-xl-3">
+									<span class="dropdown-header h6 mb-2">Company</span>
+									<!-- Dropdown item -->
+									<div class="dropdown-item d-flex bg-light-hover position-relative text-wrap py-3">
+										<div class="icon-md border bg-body rounded flex-shrink-0"><i class="bi bi-boxes heading-color fs-6"></i></div>
+										<div class="ms-2">
+											<a class="stretched-link heading-color fw-bold mb-0" href="#">About us</a>
+											<p class="mb-0 text-body small">Learn about our story, our mission statement and roadmap.</p>
+										</div>
+									</div>
+								</div>
+
+								<!-- Dropdown column item -->
+								<div class="col-md-6 col-xl-3">
+									<ul class="list-unstyled">
+										<li class="dropdown-header h6 mb-2">Integration</li>
+										<li> 
+											<a class="dropdown-item d-flex bg-light-hover icon-link icon-link-hover py-2" href="#">
+												<img src="assets/images/elements/slack.svg" class="h-30px" alt="">
+												<span class="heading-color fw-bold ms-2">Slack</span>
+												<i class="bi bi-arrow-right ms-auto"></i>
+											</a>
+
+											<a class="dropdown-item d-flex bg-light-hover icon-link icon-link-hover py-2" href="#">
+												<img src="assets/images/elements/webflow.svg" class="h-30px" alt="">
+												<span class="heading-color fw-bold ms-2">Webflow</span>
+												<i class="bi bi-arrow-right ms-auto"></i>
+											</a>
+											<a href="#" class="btn btn-sm btn-light mb-0 d-grid mt-2">View all</a>
+										</li>
+									</ul>
+								</div>
+
+								<!-- Dropdown column item -->
+								<div class="col-md-6 col-xl-3">
+									<span class="dropdown-header h6 mb-2">Recent blogs</span>
+								</div>
+							</div>
+						</div>
+					</li>
+
+					<!-- Nav item -->
+					<li class="nav-item"> <a class="nav-link" href="#">Contact us</a> </li>
+				</ul>
+			</div>
+			<!-- Main navbar END -->
+
+			<!-- Buttons -->
+			<ul class="nav align-items-center dropdown-hover ms-sm-2">
+				<!-- Dark mode option START -->
+				<li class="nav-item dropdown dropdown-animation">
+					<button class="btn btn-link mb-0 px-2 lh-1" id="bd-theme"
+					type="button"
+					aria-expanded="false"
+					data-bs-toggle="dropdown"
+					data-bs-display="static">
+					<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"  class="bi bi-circle-half theme-icon-active fill-mode fa-fw" viewBox="0 0 16 16">
+						<path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z"/>
+						<use href="#"></use>
+					</svg>
+					</button>
+
+					<ul class="dropdown-menu min-w-auto dropdown-menu-end" aria-labelledby="bd-theme">
+						<li class="mb-1">
+							<button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light">
+								<svg width="16" height="16" fill="currentColor" class="bi bi-brightness-high-fill fa-fw mode-switch me-1" viewBox="0 0 16 16">
+									<path d="M12 8a4 4 0 1 1-8 0 4 4 0 0 1 8 0zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/>
+									<use href="#"></use>
+								</svg>Light
+							</button>
+						</li>
+						<li class="mb-1">
+							<button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark">
+								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-moon-stars-fill fa-fw mode-switch me-1" viewBox="0 0 16 16">
+									<path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"/>
+									<path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"/>
+									<use href="#"></use>
+								</svg>Dark
+							</button>
+						</li>
+						<li>
+							<button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="auto">
+								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle-half fa-fw mode-switch me-1" viewBox="0 0 16 16">
+									<path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z"/>
+									<use href="#"></use>
+								</svg>Auto
+							</button>
+						</li>
+					</ul>
+				</li>
+				<!-- Dark mode option END -->
+
+				<!-- Sign up button -->
+				<li class="nav-item me-2 d-none d-sm-block">
+					<a href="#" class="btn btn-sm btn-light mb-0"><i class="bi bi-person-circle me-1"></i>Sign up</a>
+				</li>
+				<!-- Buy now button -->
+				<li class="nav-item d-none d-sm-block">
+					<button class="btn btn-sm btn-primary mb-0">Buy now!</button>
+				</li>
+				<!-- Responsive navbar toggler -->
+				<li class="nav-item">
+					<button class="navbar-toggler ms-sm-3 p-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-animation">
+							<span></span>
+							<span></span>
+							<span></span>
+						</span>
+					</button>
+				</li>	
+			</ul>
+
+		</div>
+	</nav>
+	<!-- Logo Nav END -->
+</header>
+<!-- Header END -->
 
 
 
