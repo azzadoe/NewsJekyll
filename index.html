@@ -7,7 +7,50 @@ title: Home
 
 
 
-
+<div class="container my-5">
+    <div class="position-relative">
+      <!-- Slider Controls -->
+      <ul class="controls" id="sliderFirstControls">
+        <li class="prev">
+          <i class="fe fe-chevron-left"></i>
+        </li>
+        <li class="next">
+          <i class="fe fe-chevron-right"></i>
+        </li>
+      </ul>
+      
+      <!-- Slider Container -->
+      <div class="sliderFirst">
+        {% assign colors = "#FDEBD0,#D6EAF8,#E8DAEF,#D5F5E3,#FCF3CF" | split: "," %}
+        {% assign tutorial_posts = site.posts | where_exp:"post", "post.categories contains 'tutorial'" | limit:6 %}
+        {% if tutorial_posts.size > 0 %}
+          {% for post in tutorial_posts %}
+            {% assign bg_color = colors[forloop.index0 | modulo: colors.size] %}
+            <div class="item">
+              <!-- Card -->
+              <div class="card card-modern h-100 shadow">
+                {% if post.image %}
+                  <img src="/{{ post.image }}" class="card-img-top" alt="{{ post.title }}">
+                {% else %}
+                  <img class="card-img-top featured-image img-fluid" src="/assets/images/default-thumbnail.jpg" alt="Default Thumbnail">
+                {% endif %}
+                <div class="card-body d-flex flex-column" style="background-color: {{ bg_color }};">
+                  <h5 class="card-title">
+                    <a href="{{ post.url }}">{{ post.title }}</a>
+                  </h5>
+                </div>
+              </div>
+            </div>
+          {% endfor %}
+        {% else %}
+          <div class="item">
+            <p>Tidak ada postingan dalam kategori ini.</p>
+          </div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+  
 <!-- Featured
 ================================================== -->
 <section class="featured-posts">
