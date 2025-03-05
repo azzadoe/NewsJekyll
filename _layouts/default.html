@@ -785,10 +785,9 @@ ga('send', 'pageview');
 
 
 
-      <!-- ================ HERO START ================-->
+      {% if page.url == "/" %}
+<!-- ================ HERO START ================-->
    <!--Hero Section-->
-   {% raw %}
-{% if page.url == "/" %}
    <section class="py-xl-8 py-6">
     <div class="container py-xl-6">
       <div class="row align-items-center gy-6 gy-xl-0">
@@ -926,13 +925,10 @@ ga('send', 'pageview');
         </div>
       </div>
     </div>
-                                                   </section>
-
-                                                   {% endif %}
-{% endraw %}
-                                                   <!--Hero Section-->
-
+   </section>
+   <!--Hero Section-->
 <!--============= HERO END =============-->
+{% endif %}
 
 
 
